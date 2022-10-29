@@ -36,7 +36,7 @@ export  function injectXHR()
                 if(timeCnt==0)
                 {
                     timeCnt++;
-                     axios.post('http://43.138.126.219:8000/api/ajaxstatus/new',log).then(res=>{
+                     axios.post('https://xiaoshayu123.work:8000/api/ajaxstatus/new',log).then(res=>{
                     console.log(res);
                      })
                 }

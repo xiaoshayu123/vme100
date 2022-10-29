@@ -20,7 +20,7 @@ export function injectJsError()
             stack:error.error.stack.split('\n').slice(1).map(item=>item.replace(/^\s+at\s+/g,'')).join(' ^ '),
             seletor:getSelector(getLastEvent())
         }
-axios.post('http://43.138.126.219:8000/api/jserror/new',log).then(res=>{
+axios.post('https://xiaoshayu123.work:8000/api/jserror/new',log).then(res=>{
         console.log(res);
             }) 
         
@@ -58,7 +58,7 @@ axios.post('http://43.138.126.219:8000/api/jserror/new',log).then(res=>{
         seletor:getSelector(getLastEvent()),
         ...log
     }  
-          axios.post('http://43.138.126.219:8000/api/promiseerror/new',data).then(res=>{
+          axios.post('https://xiaoshayu123.work:8000/api/promiseerror/new',data).then(res=>{
         console.log(res);
             }) 
     
