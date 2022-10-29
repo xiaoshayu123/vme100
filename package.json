@@ -1,6 +1,6 @@
 {
   "name": "vme100",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "vme50测试项目1",
   "main": "dist/vme100.cjs.js",
   "module": "dist/vme100.esm.js",
