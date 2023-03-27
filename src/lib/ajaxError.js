@@ -37,15 +37,12 @@ export  function injectXHR()
                 {
                     timeCnt++;
                      axios.post('https://xiaoshayu123.work:8000/api/ajaxstatus/new',log).then(res=>{
-                    console.log(res);
                      })
                 }
-               
             }
             this.addEventListener('load',handler('load'),false);
             this.addEventListener('error',handler('error'),false);
             this.addEventListener('abort',handler('abort'),false);
-
         }
         return oldSend.apply(this,arguments)
     }
